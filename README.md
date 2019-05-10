@@ -1,6 +1,6 @@
 # block-editor-vue
 
-"block-editor -vue" is a block editor that allows you to stack any combination of block elements, such as paragraphs, headings, lists, and so on.  
+"block-editor-vue" is a block editor that allows you to stack any combination of block elements, such as paragraphs, headings, lists, and so on.  
 Editing content is more flexible when using a WSYIG editor such as CKEditor or TinyMCE, but you need to get used to it because you can't move elements intuitively, and garbage markup remains when you delete elements.  
 Also, if you want to disclose the CMS management screen to a third party, you may need to limit the types of markup that can be used in the page. (For example, you want to allow only headlines, subheadings, and text, but not tables.)
 I have created a tool for editing HTML markup that is as easy to use as possible and that allows you to set programmable limits on the elements you use.  
@@ -340,9 +340,6 @@ default: 50
 
 #### historyMinInterval
 
-操作履歴について、前回の変更から指定以下の時間操作が連続する場合は履歴登録をスキップする(msec)。  
-(文字入力など短時間で多くの操作ステップが発生したときに、ステップ数が細かくなり過ぎるのを防ぐため)
-
 About the operation history, when the operation of the specified time or less continues from the previous change, the history registration is skipped (msec).  
 (To prevent the number of steps from becoming too many when many operation steps occur in a short time such as entering characters.)
 
@@ -352,9 +349,6 @@ default: 300
 ```
 
 #### historyMaxWait
-
-操作履歴について、連続した操作が続いても、起点の操作から指定の時間を超える場合は履歴登録を行う。(msec)
-(文字入力など、継続して文字を入力していても、ある程度の時間が経過すると履歴としてステップを登録するために使用。
 
 When the continuous operation exceeds the designated time from the operation of the starting point, the history is registered. (msec)  
 (It is used to register a step as a history after a certain amount of time has elapsed even if characters are continuously input such as character input.)
