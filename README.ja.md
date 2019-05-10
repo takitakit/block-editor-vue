@@ -862,6 +862,9 @@ onUpdate: function (html) {
 ### プリセットについて
 
 各ブロック要素について、CSSクラスやその他の属性をあらかじめ固定としたプリセットを定義可能です。  
+
+[デモ](https://codepen.io/takitakit/pen/arNwGv)  
+
 例えば、見出しにおいて、```<h3 class="title">``` というHTMLマークアップが必要であれば、Heading要素の設定は下記のようになります。
 
 ```

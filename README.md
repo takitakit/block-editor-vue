@@ -863,6 +863,9 @@ onUpdate: function (html) {
 ### About presets
 
 For each block element, you can define a presets of CSS classes and other attributes that are fixed in advance.  
+
+[Demo](https://codepen.io/takitakit/pen/arNwGv)  
+
 For example, if the heading requires HTML markup such as ```<h3 class = "title">```, the Heading element is set as follows:
 
 ```
