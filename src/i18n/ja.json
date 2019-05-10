@@ -1,0 +1,122 @@
+{
+  "common": {
+    "Table": "表組み",
+    "Column": "カラム",
+    "Heading": "見出し",
+    "List": "リスト",
+    "Image": "画像",
+    "Html": "HTML",
+    "Paragraph": "段落",
+    "cssClassName": "CSSクラス",
+    "moveUpItem": "上に移動",
+    "moveDownItem": "下に移動",
+    "sortItem": "ドラッグして並び替え",
+    "addItem": "項目の挿入",
+    "actionForBlock": "ブロックの設定",
+    "addBlock": "ブロックの追加",
+    "undo": "アンドゥ",
+    "redo": "リドゥ",
+    "selectClass": "クラスを選択",
+    "copyHtml": "HTMLをコピー",
+    "copyHtmlAlert": {
+      "success": "HTMLをクリップボードにコピーしました",
+      "fail": "コピーに失敗しました"
+    },
+    "columnNestAlert": "カラムを入れ子にすることはできません",
+    "notAllowedItemInColumn": "カラム内で許可されていないアイテムです",
+    "replicateItem": "複製",
+    "deleteItem": "削除",
+    "apply": "適用",
+    "cancel": "キャンセル",
+    "ok": "OK",
+    "save": "保存",
+    "delete": "削除",
+    "setCssClass": "CSSクラスの設定",
+    "imageCaptionPlaceholder": "キャプション",
+    "imageFromSrc": "URLを編集",
+    "imageFromUploader": "選択",
+    "InputImageUrl": "画像のURLを入力",
+    "openInNewWindow": "別画面で開く",
+    "images": "画像なし | {n} 画像 | {n} 画像",
+    "link": "リンク",
+    "url": "URL",
+    "unlink": "リンク解除",
+    "bold": "太字",
+    "brokenImage": "Broken image",
+    "clickToAddItem": "クリックして要素を追加して下さい",
+    "test": "ほげ"
+  },
+  "VisualText": {
+    "bold": "太字",
+    "link": "リンク",
+    "unlink": "リンク解除",
+    "remove": "リセット"
+  },
+  "Paragraph": {
+    "leftAlign": "左寄せ",
+    "rightAlign": "右寄せ",
+    "centerAlign": "中央寄せ",
+    "editImages": "画像の追加・編集"
+  },
+  "Heading": {
+    "changeLevel": "見出しレベルの変更"
+  },
+  "Column": {
+    "confirmMakeColumnSmaller": "現在のカラム数よりも小さい数が指定されたため、カラムは削除されます",
+    "changeColumnNum": "カラム数の変更",
+    "columnNumber": "カラム No."
+  },
+  "List": {
+    "orderedList": "番号リスト",
+    "unorderedList": "リスト",
+    "changeType": "リスト種類の変更",
+    "reachedMaxRow": "行数が最大数({n}行)に達しているため、これ以上追加できません"
+  },
+  "Table": {
+    "changeColRow": "行／列数の変更",
+    "numberOfColumns": "列数",
+    "numberOfRows": "行数",
+    "rowRangeError": "テーブルの行数は {min}-{max} の範囲で設定可能です",
+    "colRangeError": "テーブルの列数は {min}-{max} の範囲で設定可能です",
+    "rowEmptyError": "テーブルの行数が設定されていません",
+    "colEmptyError": "テーブルの行数が設定されていません",
+    "decreaseConfirm": "現在の入力エリアよりも縮小するため、データが失われます。よろしいですか？",
+    "reachedMaxRow": "これ以上行を追加できません",
+    "reachedMaxCol": "これ以上列を追加できません",
+    "reachedMinRow": "これ以上行を削除できません",
+    "reachedMinCol": "これ以上列を削除できません",
+    "cannotMoveRow": "移動元か、移動先に結合されたセルが含まれている場合は行を移動できません。",
+    "cannotMoveCol": "移動元か、移動先に結合されたセルが含まれている場合は列を移動できません。",
+    "addRowAbove": "一つ上に行を追加",
+    "addRowBelow": "一つ下に行を追加",
+    "resetColWidth": "列幅を全てリセット",
+    "headerizeRow": "行をヘッダに変換",
+    "deheaderizeRow": "行のヘッダを解除",
+    "clearRow": "行の入力をクリア",
+    "delRow": "行を削除",
+    "addColLeft": "左に列を追加",
+    "addColRight": "右に列を追加",
+    "headerizeCol": "列をヘッダに変換",
+    "deheaderizeCol": "列のヘッダを解除",
+    "clearCol": "列の入力をクリア",
+    "delCol": "列を削除",
+    "cellMenu": "選択されたセルの操作",
+    "rowMenu": "選択された行の操作",
+    "colMenu": "選択された列の操作",
+    "mergeCell": "セルを結合",
+    "divideCell": "セルを分割",
+    "headerizeCell": "セルをヘッダに変換",
+    "deheaderizeCell": "セルのヘッダを解除",
+    "clearCell": "セルの入力をクリア"
+  },
+  "ImageEdit": {
+    "inputUrl": "URLを入力",
+    "openFileBrowser": "ファイルブラウザを開く",
+    "captionPlaceholder": "キャプション",
+    "urlPlaceholder": "URL",
+    "cancelInputAlert": "入力した内容を破棄します。よろしいですか?"
+  },
+  "ImageList": {
+    "images": "画像なし | {n} 画像 | {n} 画像"
+  }
+}

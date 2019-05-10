@@ -1,0 +1,65 @@
+// ブロック要素のグループアニメーション
+.BEV-item-anim {
+  transition: all .3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.BEV-item-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.BEV-item-enter-to, .BEV-item-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+.BEV-item-leave-to {
+  opacity: 0;
+  transform: translateX(0);
+}
+.BEV-item-leave-active {
+  position: absolute;
+}
+
+// ポップアップメニュー アニメーション
+.popup-enter-active, .popup-leave-active {
+  transition: opacity .2s;
+}
+.popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+// メニュー系のフェードアニメーション
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+// カラムのアイテムなし<-->アイテムありのアニメーション
+.column-no-items-enter-active, .column-no-items-leave-active {
+  transition: opacity .3s;
+}
+.column-no-items-enter, .column-no-items-leave-to {
+  opacity: 0;
+}
+.column-no-items-leave-active {
+  position: absolute!important;
+}
+
+// ポップアップメニューの移動アニメーション
+.popup-leave-move {
+  transition: all .2s;
+  transform: translate(-20px, 0);
+}
+
+.popup-move-enter-active, .popup-move-leave-active {
+  transition: opacity .2s, transform .2s, padding .2s;
+}
+.popup-move-enter {
+  opacity: 0;
+  transform: translate(20px, 0);
+}
+.popup-move-leave-to {
+  opacity: 0;
+}

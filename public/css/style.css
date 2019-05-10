@@ -1,0 +1,185 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+}
+.content {
+  width: 100%;
+  position: relative;
+}
+div[id^="jsFrame"] {
+  z-index: 10000;
+}
+#preview {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 10px;
+  font-size: 1rem;
+  color:#555;
+
+}
+@media screen and (max-width:465px) { 
+  /* hide preview on small display */
+  div[id^="jsFrame"] {
+    display: none;
+  }
+}
+
+/* プレビュー用スタイル */
+.preview-body .ve >  * {
+  box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.preview-body h1 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+.preview-body h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+.preview-body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+.preview-body h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+.preview-body h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+.preview-body h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: .5rem 0px;
+}
+
+/* Paragraph */
+.preview-body .paragraph-wrap {
+  margin: 1rem 0;
+}
+.preview-body .paragraph-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.preview-body .paragraph-wrap .images {
+  box-sizing: border-box;
+  position: relative;
+}
+.preview-body .paragraph-wrap .images .image {
+  position: relative;
+  font-size: 0;
+  margin: .5rem 0 0 0;
+}
+.preview-body .paragraph-wrap .images .image .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: .8rem;
+  width: 100%;
+  background-color: rgba(0,0,0,.3);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 3px 5px;
+}
+.preview-body .paragraph-wrap .images .image {
+  width: 100%;
+}
+.preview-body .paragraph-wrap .images .image img {
+  width: 100%;
+}
+.preview-body .paragraph-wrap .images .image::last-child {
+  margin: 0;
+}
+
+.preview-body .paragraph-wrap.align-left .images {
+  margin: 0 .5rem 0 0;
+  float: left;
+  width: 40%;
+}
+
+.preview-body .paragraph-wrap.align-right .images {
+  margin: 0 0 0 .5rem;
+  float: right;
+  width: 40%;
+}
+.preview-body .paragraph-wrap.align-center .images {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 80%;
+}
+
+/* List */
+.preview-body ol {
+  padding: 0 0 0 1rem;
+}
+.preview-body ul {
+  padding: 0 0 0 1rem;
+  list-style-type: disc;
+}
+
+/* Table */
+.preview-body table {
+  border-collapse: collapse;
+  border: 1px solid #aaa;
+  table-layout: fixed;
+}
+.preview-body table th,
+.preview-body table td {
+  border: 1px solid #aaa;
+  padding: 3px;
+}
+.preview-body table th {
+  background-color: #ddd;
+  color: #444;
+}
+
+/* Column */
+.preview-body .column-wrap {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid #ccc;
+}
+.preview-body .column-wrap .column-item {
+  padding: .5rem;
+  flex: 1;
+}
+.preview-body .column-wrap .paragraph-wrap.align-left .images,
+.preview-body .column-wrap .paragraph-wrap.align-right .images {
+  width: 60%;
+}
+
+/* Visual Editor */
+.preview-body .ve-bold {
+    font-weight: bold;
+}
+.preview-body .ve-highlight {
+    background-color: yellow;
+}
+.preview-body .ve-underline {
+    text-decoration: underline;
+}
+.preview-body .ve-red {
+    color: red;
+}
+.preview-body .ve-blue {
+    color: blue;
+}
+.preview-body .ve-green {
+    color: green;
+}

@@ -1,0 +1,775 @@
+// 1remとブロックエディタで採用する基準フォントサイズの比率
+// 基準を1remにしたければ1.0、1.2remにしたければ1.2を設定
+$font-size-rate: 1.0;
+
+// スタイル定義 ////////////////////////////////////////////
+
+// スイッチ --------------------------------------------------------
+$switch-label-text-color: #6E757C;
+$switch-label-disabled-text-color: #AEB2B7;
+
+$switch-normal-bg-color: #FFF;
+$switch-normal-border: 1px solid #B3B7BC;
+$switch-normal-fill-color: #B3B7BC;
+
+$switch-active-bg-color: #307DF6;
+$switch-active-border: 1px solid #307DF6;
+$swith-active-fill-color: #FFF;
+
+$switch-disabled-bg-color: #EFF0F1;
+$switch-disabled-border: 1px solid #B3B7BC;
+$swith-disabled-fill-color: #B3B7BC;
+
+// チェックボックス ------------------------------------------------
+$chk-label-text-color: #6E757C;
+$chk-label-disabled-text-color: #AEB2B7;
+
+// プライマリ
+$chk-prm-border: 1px solid #307DF6;
+$chk-prm-fill-color: #307DF6;
+$chk-prm-text-color: #FFFFFF;
+$chk-prm-bg-color: #FFFFFF;
+$chk-prm-active-shadow: 0 0 0 0.17rem rgba(49,126,246,.3);
+
+// プライマリ（無効）
+$chk-prm-disabled-border: 1px solid #92BAFA;
+
+// セカンダリ
+$chk-scd-border: 1px solid #6E757C;
+$chk-scd-fill-color: #6E757C;
+$chk-scd-text-color: #FFFFFF;
+$chk-scd-bg-color: #FFFFFF;
+$chk-scd-active-shadow: 0 0 0 0.17rem rgba(111,118,125,.3);
+
+// セカンダリ（無効）
+$chk-scd-disabled-border: 1px solid #AEB2B7;
+
+// 警告
+$chk-dgr-border: 1px solid #FD5659;
+$chk-dgr-fill-color: #FD5659;
+$chk-dgr-text-color: #FFFFFF;
+$chk-dgr-bg-color: #FFFFFF;
+$chk-dgr-active-shadow: 0 0 0 0.17rem rgba(255,85,85,.3);
+
+// 警告（無効）
+$chk-dgr-disabled-border: 1px solid #FEBCBD;
+
+// ボタン ------------------------------------------------
+$btn-border-radius: 2px;
+
+// プライマリ
+$btn-prm-border: 1px solid #307DF6;
+$btn-prm-text-color: #307DF6;
+$btn-prm-bg-color: #FFFFFF;
+
+// プライマリ（ホバー）
+$btn-prm-hover-border: 1px solid #307DF6;
+$btn-prm-hover-text-color: #307DF6;
+$btn-prm-hover-bg-color: #EAF2FE;
+
+// プライマリ（アクティブ）
+$btn-prm-active-border: 1px solid #307DF6;
+$btn-prm-active-text-color: #307DF6;
+$btn-prm-active-bg-color: #FFFFFF;
+$btn-prm-active-shadow: 0 0 0 0.2rem rgba(49,126,246,.3);
+
+// プライマリ（無効）
+$btn-prm-disabled-border: 1px solid #92BAFA;
+$btn-prm-disabled-text-color: #92BAFA;
+$btn-prm-disabled-bg-color: #FFFFFF;
+
+
+// セカンダリ
+$btn-scd-border: 1px solid #6E757C;
+$btn-scd-text-color: #6E757C;
+$btn-scd-bg-color: #FFFFFF;
+
+// セカンダリ（ホバー）
+$btn-scd-hover-border: 1px solid #6E757C;
+$btn-scd-hover-text-color: #6E757C;
+$btn-scd-hover-bg-color: #EEEFF0;
+
+// セカンダリ（アクティブ）
+$btn-scd-active-border: 1px solid #6E757C;
+$btn-scd-active-text-color: #6E757C;
+$btn-scd-active-bg-color: #FFFFFF;
+$btn-scd-active-shadow: 0 0 0 0.2rem rgba(111,118,125,.3);
+
+// セカンダリ（無効）
+$btn-scd-disabled-border: 1px solid #AEB2B7;
+$btn-scd-disabled-text-color: #AEB2B7;
+$btn-scd-disabled-bg-color: #FFFFFF;
+
+// 警告
+$btn-dgr-border: 1px solid #FF5555;
+$btn-dgr-text-color: #FF5555;
+$btn-dgr-bg-color: #FFFFFF;
+
+// 警告（ホバー）
+$btn-dgr-hover-border: 1px solid #FF5555;
+$btn-dgr-hover-text-color: #FF5555;
+$btn-dgr-hover-bg-color: #FFEEEE;
+
+// 警告（アクティブ）
+$btn-dgr-active-border: 1px solid #FF5555;
+$btn-dgr-active-text-color: #FF5555;
+$btn-dgr-active-bg-color: #FFFFFF;
+$btn-dgr-active-shadow: 0 0 0 0.2rem rgba(255,85,85,.3);
+
+// 警告（無効）
+$btn-dgr-disabled-border: 1px solid #FFBCBC;
+$btn-dgr-disabled-text-color: #FFBCBC;
+$btn-dgr-disabled-bg-color: #FFFFFF;
+
+// ラベルボタン ------------------------------------------------
+$lblbtn-border-radius: 2px;
+
+// プライマリ
+$lblbtn-prm-text-color: #307DF6;
+$lblbtn-prm-bg-color: transparent;
+
+// プライマリ（ホバー）
+$lblbtn-prm-hover-bg-color: #EAF2FE;
+
+// プライマリ（アクティブ）
+$lblbtn-prm-active-bg-color: transparent;
+$lblbtn-prm-active-shadow: 0 0 0 0.2rem rgba(49,126,246,.3);
+
+// プライマリ（無効）
+$lblbtn-prm-disabled-bg-color: transparent;
+$lblbtn-prm-disabled-text-color: #92BAFA;
+
+// セカンダリ
+$lblbtn-scd-bg-color: transparent;
+$lblbtn-scd-text-color: #6E757C;
+
+// セカンダリ（ホバー）
+$lblbtn-scd-hover-bg-color: #EEEFF0;
+
+// セカンダリ（アクティブ）
+$lblbtn-scd-active-bg-color: transparent;
+$lblbtn-scd-active-shadow: 0 0 0 0.2rem rgba(111,118,125,.3);
+
+// セカンダリ（無効）
+$lblbtn-scd-disabled-bg-color: transparent;
+$lblbtn-scd-disabled-text-color: #AEB2B7;
+
+// 警告
+$lblbtn-dgr-bg-color: transparent;
+$lblbtn-dgr-text-color: #FF5656;
+
+// 警告（ホバー）
+$lblbtn-dgr-hover-bg-color: #FFEEEE;
+
+// 警告（アクティブ）
+$lblbtn-dgr-active-bg-color: transparent;
+$lblbtn-dgr-active-shadow: 0 0 0 0.2rem rgba(255,85,85,.3);
+
+// 無効
+$lblbtn-dgr-disabled-bg-color: transparent;
+$lblbtn-dgr-disabled-text-color: #FFBCBC;
+
+// テキストボタン ----------------------------------------------
+$txtbtn-bg-color: transparent;
+$txtbtn-text-color: #6E757C;
+
+$txtbtn-hover-text-color: #565B61;
+
+
+// タイトル・サブタイトル -----------------------------------------
+
+// プライマリ
+$ttl-prm-bg-color: #307DF6;
+$ttl-prm-text-color: #FFFFFF;
+$subttl-prm-bg-color: #C3D9FC;
+$subttl-prm-text-color: #6E757C;
+// プライマリ（無効）
+$ttl-prm-disabled-bg-color: #92BAFA;
+$ttl-prm-disabled-text-color: #FFFFFF;
+$subttl-prm-disabled-bg-color: #EAF2FE;
+$subttl-prm-disabled-text-color: #AEB2B7;
+
+// セカンダリ
+$ttl-scd-bg-color: #6E757C;
+$ttl-scd-text-color: #FFFFFF;
+$subttl-scd-bg-color: #CED1D4;
+$subttl-scd-text-color: #6E757C;
+// セカンダリ（無効）
+$ttl-scd-disabled-bg-color: #AEB2B7;
+$ttl-scd-disabled-text-color: #FFFFFF;
+$subttl-scd-disabled-bg-color: #EFF0F1;
+$subttl-scd-disabled-text-color: #AEB2B7;
+
+// 警告
+$ttl-dgr-bg-color: #FF5656;
+$ttl-dgr-text-color: #FFFFFF;
+$subttl-dgr-bg-color: #FFD0D0;
+$subttl-dgr-text-color: #6E757C;
+// 警告（無効）
+$ttl-dgr-disabled-bg-color: #FFBCBC;
+$ttl-dgr-disabled-text-color: #FFFFFF;
+$subttl-dgr-disabled-bg-color: #FFEFEF;
+$subttl-dgr-disabled-text-color: #AEB2B7;
+
+
+// ポップアップメニュー -----------------------------------
+$menu-bg-color: #FFFFFF;
+$menu-border: #D9D8D8;
+$menu-border-radius: 5px;
+$menu-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 0 10px rgba(0,0,0,.1);
+
+// プライマリ
+$menu-prm-bg-color: #FFFFFF;
+$menu-prm-text-color: #6E757C;
+
+// プライマリ（ホバー）
+$menu-prm-hover-bg-color: #EAF2FE;
+$menu-prm-hover-text-color: #6E757C;
+
+// プライマリ（アクティブ）
+$menu-prm-active-bg-color: #5796F8;
+$menu-prm-active-text-color: #FFFFFF;
+
+// 警告
+$menu-dgr-bg-color: #FFFFFF;
+$menu-dgr-text-color: #FF6969;
+
+// 警告（ホバー）
+$menu-dgr-hover-bg-color: #FFEEEE;
+$menu-dgr-hover-text-color: #FF5656;
+
+// 無効
+$menu-disabled-bg-color: transparent;
+$menu-disabled-text-color: #CED1D4;
+
+// インプット ---------------------------------------------
+$input-border-radius: 2px;
+$input-bg-color: #FFFFFF;
+$input-border: 1px solid #B3B7BC;
+$input-text-color: #888E95;
+$input-placeholder-color: #CED1D4;
+
+// クリアボタン
+$input-clear-color: #CED1D4;
+$input-clear-hover-color: #B3B7BC;
+
+// アクティブ
+$input-active-bg-color: #FFFFFF;
+$input-active-border: 1px solid #7EAEF9;
+$input-active-text-color: #6E757C;
+$input-active-shadow: 0 0 0 0.2rem rgba(49,126,246,.3);
+
+// セレクト ---------------------------------------------
+$select-border-radius: 2px;
+$select-bg-color: #FFFFFF;
+$select-border: 1px solid #B3B7BC;
+$select-text-color: #888E95;
+
+// アクティブ
+$select-active-bg-color: #FFFFFF;
+$select-active-border: 1px solid #7EAEF9;
+$select-active-text-color: #6E757C;
+$select-active-shadow: 0 0 0 0.2rem rgba(49,126,246,.3);
+
+// アイテム ---------------------------------------------
+$item-border: 1px solid #B3B7BC;
+$item-text-color: #888E95;
+
+$item-hover-border: 1px solid #AFCDFB;
+$item-hover-text-color: #888E95;
+
+$item-active-border: 1px solid #7EAEF9;
+$item-active-text-color: #6E757C;
+
+// ラベル
+$lbl-text-color: #6E757C;
+$lbl-dgr-text-color: #FF5656;
+
+// 
+$item-wrap-border-radius: 3px;
+
+// スタイル定義ここまで ////////////////////////////////////////////
+
+@mixin prefix($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+
+@function urlEncode($string) {
+  $map: (
+    "%": "%25",
+    "<": "%3C",
+    ">": "%3E",
+    " ": "%20",
+    "!": "%21",
+    "*": "%2A",
+    "'": "%27",
+    '"': "%22",
+    "(": "%28",
+    ")": "%29",
+    ";": "%3B",
+    ":": "%3A",
+    "@": "%40",
+    "&": "%26",
+    "=": "%3D",
+    "+": "%2B",
+    "$": "%24",
+    ",": "%2C",
+    "/": "%2F",
+    "?": "%3F",
+    "#": "%23",
+    "[": "%5B",
+    "]": "%5D"
+  );
+  $new: $string;
+  @each $search, $replace in $map {
+    $new: strReplace($new, $search, $replace);
+  }
+  @return $new;
+}
+
+@function bgSvg ($value) {
+  @return url('data:image/svg+xml;charset=utf8,#{urlEncode($value)}');
+}
+
+// ボタン
+%button {
+  transition: all .15s;
+  white-space: nowrap;
+  padding: .2em .4em;
+  font-size: .8em;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: $btn-border-radius;
+}
+
+// プライマリボタン
+%primary-button {
+  @extend %button;
+  
+  border: $btn-prm-border;
+  color: $btn-prm-text-color;
+  background-color: $btn-prm-bg-color;
+  
+  &:hover {
+    border: $btn-prm-hover-border;
+    color: $btn-prm-hover-text-color;
+    background-color: $btn-prm-hover-bg-color;
+  }
+  &:focus {
+    border: $btn-prm-active-border;
+    color: $btn-prm-active-text-color;
+    background-color: $btn-prm-active-bg-color;
+    box-shadow: $btn-prm-active-shadow;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    border: $btn-prm-disabled-border;
+    color: $btn-prm-disabled-text-color;
+    background-color: $btn-prm-disabled-bg-color;
+    cursor: default;
+  }
+}
+
+// セカンダリボタン
+%secondary-button {
+  @extend %button;
+  
+  border: $btn-scd-border;
+  color: $btn-scd-text-color;
+  background-color: $btn-scd-bg-color;
+  
+  &:hover {
+    border: $btn-scd-hover-border;
+    color: $btn-scd-hover-text-color;
+    background-color: $btn-scd-hover-bg-color;
+  }
+  &:focus {
+    border: $btn-scd-active-border;
+    color: $btn-scd-active-text-color;
+    background-color: $btn-scd-active-bg-color;
+    box-shadow: $btn-scd-active-shadow;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    border: $btn-scd-disabled-border;
+    color: $btn-scd-disabled-text-color;
+    background-color: $btn-scd-disabled-bg-color;
+    cursor: default;
+  }
+}
+
+// 警告ボタン
+%danger-button {
+  @extend %button;
+  
+  border: $btn-dgr-border;
+  color: $btn-dgr-text-color;
+  background-color: $btn-dgr-bg-color;
+  
+  &:hover {
+    border: $btn-dgr-hover-border;
+    color: $btn-dgr-hover-text-color;
+    background-color: $btn-dgr-hover-bg-color;
+  }
+  &:focus {
+    border: $btn-dgr-active-border;
+    color: $btn-dgr-active-text-color;
+    background-color: $btn-dgr-active-bg-color;
+    box-shadow: $btn-dgr-active-shadow;
+  }
+
+  &:disabled,
+  &.BEV-disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    border: $btn-dgr-disabled-border;
+    color: $btn-dgr-disabled-text-color;
+    background-color: $btn-dgr-disabled-bg-color;
+    cursor: default;
+  }
+}
+
+// ラベルボタン
+%label-button {
+  transition: all .15s;
+  white-space: nowrap;
+  margin: 0;
+  border: 0;
+  padding: .2em .4em;
+  // @include font-size(.8);
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: $lblbtn-border-radius;
+}
+// プライマリラベルボタン
+%primary-label-button {
+  @extend %label-button;
+  
+  border: 0;
+  color: $lblbtn-prm-text-color;
+  background-color: $lblbtn-prm-bg-color;
+  
+  &:hover {
+    background-color: $lblbtn-prm-hover-bg-color;
+  }
+  &:focus {
+    background-color: $lblbtn-prm-active-bg-color;
+    box-shadow: $lblbtn-prm-active-shadow;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    color: $lblbtn-prm-disabled-text-color;
+    background-color: $lblbtn-prm-disabled-bg-color;
+    cursor: default;
+    box-shadow: none;
+  }
+}
+// セカンダリラベルボタン
+%secondary-label-button {
+  @extend %label-button;
+  
+  border: 0;
+  color: $lblbtn-scd-text-color;
+  background-color: $lblbtn-scd-bg-color;
+  
+  &:hover {
+    background-color: $lblbtn-scd-hover-bg-color;
+  }
+  &:focus {
+    background-color: $lblbtn-scd-active-bg-color;
+    box-shadow: $lblbtn-scd-active-shadow;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    color: $lblbtn-scd-disabled-text-color;
+    background-color: $lblbtn-scd-disabled-bg-color;
+    cursor: default;
+    box-shadow: none;
+  }
+}
+// 警告ラベルボタン
+%danger-label-button {
+  @extend %label-button;
+  
+  border: 0;
+  color: $lblbtn-dgr-text-color;
+  background-color: $lblbtn-dgr-bg-color;
+  
+  &:hover {
+    background-color: $lblbtn-dgr-hover-bg-color;
+  }
+  &:focus {
+    background-color: $lblbtn-dgr-active-bg-color;
+    box-shadow: $lblbtn-dgr-active-shadow;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    color: $lblbtn-dgr-disabled-text-color;
+    background-color: $lblbtn-dgr-disabled-bg-color;
+    cursor: default;
+    box-shadow: none;
+  }
+}
+
+// インプット
+%input {
+  transition: all .15s;
+  background-color: $input-bg-color;
+  border: $input-border;
+  color: $input-text-color;
+  padding: .3em .5em;
+  font-size: .9em;
+  border-radius: $input-border-radius;
+  outline: none;
+
+  &::placeholder {
+    color: #CED1D4;
+  }
+
+  &:focus {
+    background-color: $input-active-bg-color;
+    color: $input-active-text-color;
+    border: $input-active-border;
+    box-shadow: $input-active-shadow;
+  }
+}
+
+// アイテム
+%item {
+  border: $item-border;
+  color: $item-text-color;
+
+  &.BEV-hover {
+    border: $item-hover-border;
+    color: $item-hover-text-color;
+  }
+  &.BEV-active {
+    border: $item-active-border;
+    color: $item-active-text-color;
+  }
+}
+
+// ポップアップメニューのラップ要素
+%popup-menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  user-select: none;
+
+  // メニュー要素
+  .BEV-menu {
+    @extend %popup-menu;
+
+    // ダイアログスタイル
+    &.BEV-dialog {
+      padding: 7px;
+    }
+
+    // リストスタイル
+    &.BEV-list {
+      // 各リストのスタイル
+      .BEV-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+      // 無効リストスタイル
+      .BEV-item.BEV-disabled {
+        cursor: default;
+      }
+      .BEV-item.BEV-active {
+        background-color: $menu-prm-active-bg-color;
+        color: $menu-prm-active-text-color;
+      }
+    }
+  }
+  // タイトル
+  .BEV-menu-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0, -100%);
+      color: #fff;
+      font-size: .9em;
+    }
+
+  // ボタン類
+  .BEV-buttons {
+    display: flex;
+    margin: 5px 0 0 0;
+    button {
+      font-size: .8em;
+    }
+    button.BEV-cancel {
+      @extend %danger-button;
+      margin: 0 7px 0 0;
+    }
+    button.BEV-save {
+      @extend %primary-button;
+    }
+  }
+
+  // 入力要素のラップ要素
+  .BEV-input {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 7px 0;
+    font-size: 1em;
+
+    // SELECT要素
+    select {
+      @extend %select;
+    }
+  }
+
+  // スマホレイアウト
+  &.BEV-sp {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    box-sizing: border-box;
+    z-index: 1000;
+    
+    .BEV-menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 30px);
+      box-sizing: border-box;
+
+      // リストスタイル
+      &.BEV-list {
+        .BEV-item {
+          padding: .8em;
+          font-size: .8em;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+      }
+
+      .BEV-menu-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, -100%);
+        color: #fff;
+        font-size: .9em;
+      }
+    }
+  }
+}
+
+// ポップアップメニュー
+%popup-menu {
+  position: relative;
+  background-color: $menu-bg-color;
+  border-radius: $menu-border-radius;
+  box-shadow: $menu-shadow;
+  box-sizing: border-box;
+
+  // 項目
+  .BEV-item {
+      white-space: nowrap;
+      background-color: $menu-prm-bg-color;
+      color: $menu-prm-text-color;
+      padding: .4em .6em;
+      font-size: .9em;
+      line-height: .9em;
+      cursor: pointer;
+      svg {
+        margin: 0 .1em 0 0;
+      }
+  }
+  .BEV-item:first-child {
+    border-top-left-radius: $menu-border-radius+1;
+    border-top-right-radius: $menu-border-radius+1;
+  }
+  .BEV-item:last-child {
+    border-bottom-left-radius: $menu-border-radius+1;
+    border-bottom-right-radius: $menu-border-radius+1;
+  }
+  // ホバー時
+  .BEV-item:hover {
+    background-color: $menu-prm-hover-bg-color;
+    color: $menu-prm-hover-text-color;
+  }
+  // アクティブ時
+  .BEV-item.active {
+    background-color: $menu-prm-active-bg-color;
+    color: $menu-prm-active-text-color;
+  }
+
+  // 警告スタイル
+  .BEV-item.BEV-danger {
+    background-color: $menu-dgr-bg-color;
+    color: $menu-dgr-text-color;
+  }
+  // 警告スタイル（ホバー）
+  .BEV-item.BEV-danger:hover {
+    background-color: $menu-dgr-hover-bg-color;
+    color: $menu-dgr-hover-text-color;
+  }
+
+  .BEV-item.BEV-disabled {
+    background-color: $menu-disabled-bg-color!important;
+    color: $menu-disabled-text-color!important;
+  }
+}
+
+// ラベル
+%label {
+  font-size: .8em;
+  font-weight: normal;
+  padding: .2em .4em;
+  color: $lbl-text-color;
+}
+
+// セレクト
+%select {
+  transition: all .15s;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: .38em .8em .38em .5em;
+  font-size: .9em;
+  line-height: 1.2em;
+  color: $select-text-color;
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23707070' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+  background-color: $select-bg-color;
+  border: $select-border;
+  border-radius: $select-border-radius;
+  appearance: none;
+
+  &:focus {
+    border: $select-active-border;
+    box-shadow: $select-active-shadow;
+  }
+}

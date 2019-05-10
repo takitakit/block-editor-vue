@@ -1,0 +1,122 @@
+{
+  "common": {
+    "Table": "Table",
+    "Column": "Column",
+    "Heading": "Heading",
+    "List": "List",
+    "Image": "Image",
+    "Html": "HTML",
+    "Paragraph": "Paragraph",
+    "cssClassName": "CSS Class",
+    "moveUpItem": "Move up",
+    "moveDownItem": "Move down",
+    "sortItem": "Sort to drag",
+    "addItem": "Insert item",
+    "actionForBlock": "Action for block",
+    "addBlock": "Add a block AS",
+    "undo": "Undo",
+    "redo": "Redo",
+    "selectClass": "Select class",
+    "copyHtml": "Copy HTML",
+    "copyHtmlAlert": {
+      "success": "Copied HTML to clipboard",
+      "fail": "Failed copy HTML to clipboard"
+    },
+    "columnNestAlert": "Column item can't be nested",
+    "notAllowedItemInColumn": "This item is not allowed in column",
+    "replicateItem": "Replicate",
+    "deleteItem": "Delete",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "save": "Save",
+    "delete": "Delete",
+    "setCssClass": "Set CSS class",
+    "imageCaptionPlaceholder": "Caption",
+    "imageFromSrc": "Edit url",
+    "imageFromUploader": "Select",
+    "InputImageUrl": "Input image URL",
+    "openInNewWindow": "Open in a new window",
+    "images": "No Images | {n} Image | {n} Images",
+    "link": "link",
+    "url": "URL",
+    "unlink": "unlink",
+    "bold": "bold",
+    "brokenImage": "Broken image",
+    "clickToAddItem": "Click here to add a item",    
+    "test": "hoge"
+  },
+  "VisualText": {
+    "bold": "Bold",
+    "link": "Link",
+    "unlink": "Unlink",
+    "remove": "Remove format"
+  },
+  "Paragraph": {
+    "leftAlign": "left-align",
+    "rightAlign": "rignt-align",
+    "centerAlign": "center-align",
+    "editImages": "Add/Edit Images"
+  },
+  "Heading": {
+    "changeLevel": "Change heading level"
+  },
+  "Column": {
+    "confirmMakeColumnSmaller": "Because a number less than the current number of columns was specified, the column will be delete.",
+    "changeColumnNum": "Change number of columns",
+    "columnNumber": "Column #"
+  },
+  "List": {
+    "orderedList": "Ordered list",
+    "unorderedList": "Unordered list",
+    "changeType": "Change list type",
+    "reachedMaxRow": "The number of rows has reached the maximum({n} rows) and can not be added anymore."
+  },
+  "Table": {
+    "changeColRow": "Change number of cols/rows",
+    "numberOfColumns": "columns",
+    "numberOfRows": "rows",
+    "rowRangeError": "The number of rows in the table can be set in the range of {min}-{max}.",
+    "colRangeError": "The number of columns in the table can be set in the range of {min}-{max}.",
+    "rowEmptyError": "The number of rows in the table has not been set.",
+    "colEmptyError": "The number of columns in the table has not been set.",
+    "decreaseConfirm": "Data is lost because it is smaller than the current input area. Is it OK?",
+    "reachedMaxRow": "The number of rows has reached the maximum value and can not be added any more.",
+    "reachedMaxCol": "The number of columns has reached the maximum value and can not be added any more.",
+    "reachedMinRow": "The number of rows has reached the minimum value and can not be deleted any more.",
+    "reachedMinCol": "The number of columns has reached the minimum value and can not be deleted any more.",
+    "resetColWidth": "Reset width of all columns",
+    "cannotMoveRow": "You can not move a row if the source or destination location contains merged cells.",
+    "cannotMoveCol": "You can not move a column if the source or destination location contains merged cells.",
+    "addRowAbove": "Add a row above",
+    "addRowBelow": "Add a row below",
+    "headerizeRow": "Turn a row into a table header",
+    "deheaderizeRow": "Return a row into a table data",
+    "clearRow": "Clear the contents of a row",
+    "delRow": "Delete a row",
+    "addColLeft": "Add a column to the left",
+    "addColRight": "Add a column to the right",
+    "headerizeCol": "Turn a column into a table header",
+    "deheaderizeCol": "Return a column into a table data",
+    "clearCol": "Clear the contents of a column",
+    "delCol": "Delete a column",
+    "cellMenu": "Cell Menu",
+    "rowMenu": "Row Menu",
+    "colMenu": "Column Menu",
+    "mergeCell": "Merge cells",
+    "divideCell": "Divide cells",
+    "headerizeCell": "Trun cells into a table header",
+    "deheaderizeCell": "Return cells into a table data",
+    "clearCell": "Clear the contents of cells"
+  },
+  "ImageEdit": {
+    "inputUrl": "Input URL",
+    "openFileBrowser": "Open a file browser",
+    "captionPlaceholder": "Caption",
+    "urlPlaceholder": "URL",
+    "cancelInputAlert": "Discards the input contents.Is it OK?"
+  },
+  "ImageList": {
+    "images": "No Images | {n} Image | {n} Images"
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/style.css">
+    <title>block-editor-vue</title>
+  </head>
+  <body>
+    <div class="content">
+      <form name="form1" action="." method="post">
+        <% if (NODE_ENV === 'production') { %>
+          <input name="test1" id="app1" type="hidden">
+        <% } else if (NODE_ENV === 'development') { %>
+          <input name="test1" id="app1" type="hidden" value="&lt;div class=&quot;ve&quot;&gt;&lt;div class=&quot;paragraph-wrap align-right important&quot;&gt;&lt;div class=&quot;text&quot;&gt;重要コンテンツ&lt;br&gt;テスト&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;paragraph-wrap align-right normal&quot;&gt;&lt;div class=&quot;text&quot;&gt;通常コンテンツ&lt;br&gt;テスト&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;paragraph-wrap align-center&quot;&gt;&lt;div class=&quot;images&quot;&gt;&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://placehold.jp/150x150.png&quot;&gt;&lt;div class=&quot;caption&quot;&gt;キャプション&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;text&quot;&gt;中央揃えテスト&lt;br&gt;テスト&lt;/div&gt;&lt;/div&gt;&lt;h2 class=&quot;title&quot;&gt;タイトル&lt;/h2&gt;&lt;h3 class=&quot;sub-title&quot;&gt;サブタイトル&lt;/h3&gt;&lt;ul class=&quot;link&quot;&gt;&lt;li&gt;リンク&lt;/li&gt;&lt;li&gt;リスト&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;通常リスト&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;箇条書きリスト&lt;/li&gt;&lt;li&gt;あああ&lt;/li&gt;&lt;/ol&gt;&lt;table class=&quot;product&quot;&gt;&lt;colgroup&gt;&lt;col&gt;&lt;/col&gt;&lt;col&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;商品テーブル&lt;/td&gt;&lt;td&gt;テスト&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;あああ&lt;/td&gt;&lt;td&gt;あああ&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;colgroup&gt;&lt;col&gt;&lt;/col&gt;&lt;col&gt;&lt;/col&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;通常テーブル&lt;/td&gt;&lt;td&gt;テスト&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;あああ&lt;/td&gt;&lt;td&gt;あああ&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&quot;html-wrap&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tw2hmhbT2ZY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;" />    
+        <% } %>
+      </form>
+    </div>
+  </body>
+  <script src="https://riversun.github.io/jsframe/jsframe.js"></script>
+  <script src="<%= BASE_URL %>js/<%= NODE_ENV %>.js"></script>
+</html>
