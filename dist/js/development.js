@@ -4,7 +4,8 @@ const merge_cell2 = { content: 'merged cell2', header: true, rowspan: 1, colspan
 const items = [
     {
         name: 'Heading',
-        level: 'h3',
+        className: 'title',
+        level: 'h2',
         content: 'hoge'
     },
     {
@@ -188,7 +189,7 @@ options = {
         allowImages: true,
         defaultImageAlign: 'right',
         dispName: 'テキスト',
-        preDefinedSets: [
+        presets: [
             { className: 'important', dispName: '重要' },
             { className: 'normal', dispName: '通常' },
             { imageAlign: 'center', dispName: '中央揃え画像' }
@@ -197,7 +198,7 @@ options = {
     List: {
         maxRows: 10,
         allowStyledText: true,
-        preDefinedSets: [
+        presets: [
             { className: 'link', type: 'unordered', dispName: 'リンクリスト' },
             { type: 'unordered', dispName: '通常リスト' },
             { type: 'ordered', dispName: '箇条書きリスト' }
@@ -208,7 +209,7 @@ options = {
         maxCol: 10,                 // テーブルの最大列数
         minRow: 1,                  // テーブルの最小行数
         minCol: 2,                  // テーブルの最小列数
-        preDefinedSets: [
+        presets: [
             { className: 'product', dispName: '商品テーブル' },
             { dispName: '通常テーブル' }
         ]
@@ -218,7 +219,7 @@ options = {
         // levels: ['h3'],
         levelNames: { h2: '超大見出し', h3: '大見出し', h4: '中見出し', h5: '小見出し', h6: '超小見出し' },
         defaultLevel: 'h3',
-        preDefinedSets: [
+        presets: [
             { className: 'title', level: 'h2', dispName: 'タイトル' },
             { className: 'sub-title', level: 'h3', dispName: 'サブタイトル' }
         ]
@@ -228,7 +229,7 @@ options = {
         defaultNumColumn: 2,                          // デフォルトのカラム数
         maxColumn: 5,                                 // 段組の最大数
         minColumn: 2,                                 // 段組の最小数
-        preDefinedSets: [
+        presets: [
             { className: 'special', dispName: '特集カラム' },
             { className: 'normal', dispName: '通常カラム' }
         ]

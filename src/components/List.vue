@@ -132,7 +132,7 @@ export default {
   computed: {
     // アイテムヘッダの名前
     itemHeaderLabel () {
-      if (this.item.preDefined && this.item.preDefined.dispName) return this.item.preDefined.dispName
+      if (this.item.preset && this.item.preset.dispName) return this.item.preset.dispName
       else if (this.item.type === 'ordered') return this.$t('List.orderedList')
       else if (this.item.type === 'unordered') return this.$t('List.unorderedList')
       return ''
@@ -461,9 +461,9 @@ export class Item extends ItemBase {
       className: this.getConfig('allowCssClass') ? css_class : null,
       rows: rows,
     }
-    const def = this.getPreDefinedSets(item)
+    const def = this.getPreset(item)
     if (def) { // 定義セットに一致するものが見つかった
-      item.preDefined = def
+      item.preset = def
     }
     return item
   }

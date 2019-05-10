@@ -88,19 +88,19 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [tagName](#tagname)
   - [tagClassName](#tagclassname)
   - [dispName](#dispname)
-  - [preDefinedSets](#predefinedsets)
+  - [presets](#presets)
 - [Heading](#heading)
   - [levels](#levels)
   - [defaultLevel](#defaultlevel)
   - [levelNames](#levelnames)
   - [dispName](#dispname-1)
-  - [preDefinedSets](#predefinedsets-1)
+  - [presets](#presets-1)
 - [List](#list)
   - [types](#types)
   - [defaultType](#defaulttype)
   - [maxRows](#maxrows)
   - [dispName](#dispname-2)
-  - [preDefinedSets](#predefinedsets-2)
+  - [presets](#presets-2)
 - [Table](#table)
   - [maxRow](#maxrow)
   - [minRow](#minrow)
@@ -109,7 +109,7 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [minCol](#mincol)
   - [defaultColNum](#defaultcolnum)
   - [dispName](#dispname-3)
-  - [preDefinedSets](#predefinedsets-3)
+  - [presets](#presets-3)
 - [Column](#column)
   - [allowChangeNumColumn](#allowchangenumcolumn)
   - [maxColumn](#maxcolumn)
@@ -120,16 +120,16 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [columnTagName](#columntagname)
   - [columnTagClassName](#columntagclassname)
   - [dispName](#dispname-4)
-  - [preDefinedSets](#predefinedsets-4)
+  - [presets](#presets-4)
 - [Html](#html)
   - [tagName](#tagname-2)
   - [tagClassName](#tagclassname-2)
   - [dispName](#dispname-5)
-  - [preDefinedSets](#predefinedsets-5)
+  - [presets](#presets-5)
 - [Events](#events)
   - [onLoad](#onload)
   - [onUpdate](#onupdate)
-- [About pre-defined sets](#about-predefined-sets)
+- [About presets](#about-presets)
 
 ### Common
 #### rootClass
@@ -439,10 +439,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 ```
 type: array
@@ -502,10 +502,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 ```
 type: array
@@ -553,10 +553,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 ```
 type: array
@@ -629,10 +629,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 
 ```
@@ -734,10 +734,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 ```
 type: array
@@ -780,10 +780,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-A list of predefined sets containing fixed combinations of CSS class names and other elements.  
-[Here](#about-predefined-sets) for more information about predefined sets.
+A list of presets containing fixed combinations of CSS class names and other elements.  
+[Here](#about-presets) for more information about presets.
 
 ```
 type: array
@@ -860,14 +860,14 @@ onUpdate: function (html) {
 }
 ```
 
-### About predefined sets
+### About presets
 
-For each block element, you can define a predefined set of CSS classes and other attributes that are fixed in advance.  
+For each block element, you can define a presets of CSS classes and other attributes that are fixed in advance.  
 For example, if the heading requires HTML markup such as ```<h3 class = "title">```, the Heading element is set as follows:
 
 ```
 Heading: {
-  preDefinedSets: [
+  presets: [
     {level: 'h3', className: 'title', dispName: 'Title of heading'}
   ]
 }

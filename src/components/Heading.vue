@@ -101,7 +101,7 @@ export default {
   computed: {
     // アイテムヘッダに表示する名前
     itemHeaderLabel () {
-      if (this.item.preDefined && this.item.preDefined.dispName) return this.item.preDefined.dispName
+      if (this.item.preset && this.item.preset.dispName) return this.item.preset.dispName
 
       const names = this.getConfig('levelNames')
       if (!names || typeof names[this.item.level] === 'undefined') {
@@ -213,9 +213,9 @@ export class Item extends ItemBase {
       className: this.getConfig('allowCssClass') ? css_class : null,
       content: element.innerHTML,
     }
-    const def = this.getPreDefinedSets(item)
+    const def = this.getPreset(item)
     if (def) { // 定義セットに一致するものが見つかった
-      item.preDefined = def
+      item.preset = def
     }
     return item
   }

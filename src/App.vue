@@ -190,14 +190,14 @@ export default {
 
         // 定義されている表示名を取得
         const conf = this.getConfig(key)
-        if (conf.preDefinedSets && conf.preDefinedSets.length) {
+        if (conf.presets && conf.presets.length) {
           // 定義済み項目の定義
-          conf.preDefinedSets.forEach(def => {
+          conf.presets.forEach(def => {
             _item = {
               id: Util.generateID(),
               key: key,
               text: def.dispName,
-              preDefined: def,
+              preset: def,
               icon: `Icon${key}`
             }
             add_menu_items.push(_item)
@@ -499,12 +499,12 @@ export default {
       if (typeof ins === 'undefined') return false
 
       const item = ins.getEmptyItem()
-      if (item_def.preDefined) {
+      if (item_def.preset) {
         // 定義済みデータがあれば適用する
-        item.preDefined = item_def.preDefined
-        for (let key in item_def.preDefined) {
+        item.preset = item_def.preset
+        for (let key in item_def.preset) {
           if (key === 'dispName') continue
-          item[key] = item_def.preDefined[key]
+          item[key] = item_def.preset[key]
         }
       }      
       const undo_delta = this.applyDelta({

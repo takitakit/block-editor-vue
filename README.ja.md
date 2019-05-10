@@ -88,19 +88,19 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [tagName](#tagname)
   - [tagClassName](#tagclassname)
   - [dispName](#dispname)
-  - [preDefinedSets](#predefinedsets)
+  - [presets](#presets)
 - [Heading](#heading)
   - [levels](#levels)
   - [defaultLevel](#defaultlevel)
   - [levelNames](#levelnames)
   - [dispName](#dispname-1)
-  - [preDefinedSets](#predefinedsets-1)
+  - [presets](#presets-1)
 - [List](#list)
   - [types](#types)
   - [defaultType](#defaulttype)
   - [maxRows](#maxrows)
   - [dispName](#dispname-2)
-  - [preDefinedSets](#predefinedsets-2)
+  - [presets](#presets-2)
 - [Table](#table)
   - [maxRow](#maxrow)
   - [minRow](#minrow)
@@ -109,7 +109,7 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [minCol](#mincol)
   - [defaultColNum](#defaultcolnum)
   - [dispName](#dispname-3)
-  - [preDefinedSets](#predefinedsets-3)
+  - [presets](#presets-3)
 - [Column](#column)
   - [allowChangeNumColumn](#allowchangenumcolumn)
   - [maxColumn](#maxcolumn)
@@ -120,16 +120,16 @@ new BlockEditor('#editor', {rootClass: 've'});
   - [columnTagName](#columntagname)
   - [columnTagClassName](#columntagclassname)
   - [dispName](#dispname-4)
-  - [preDefinedSets](#predefinedsets-4)
+  - [presets](#presets-4)
 - [Html](#html)
   - [tagName](#tagname-2)
   - [tagClassName](#tagclassname-2)
   - [dispName](#dispname-5)
-  - [preDefinedSets](#predefinedsets-5)
+  - [presets](#presets-5)
 - [Events](#events)
   - [onLoad](#onload)
   - [onUpdate](#onupdate)
-- [About pre-defined sets](#事前定義リストについて)
+- [プリセットについて](#プリセットについて)
 
 ### Common
 #### rootClass
@@ -438,10 +438,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -501,10 +501,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -552,10 +552,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -628,10 +628,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -732,10 +732,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -778,10 +778,10 @@ type: string
 default: null
 ```
 
-#### preDefinedSets
+#### presets
 
-CSSクラス名、その他の要素を固定して組み合わせた、事前定義セットのリスト  
-事前定義セットの詳細は[こちら](#about-pre-defined-sets)を参照
+CSSクラス名、その他の要素を固定して組み合わせた、プリセットのリスト  
+プリセットの詳細は[こちら](#プリセットについて)を参照
 
 ```
 type: array
@@ -859,14 +859,14 @@ onUpdate: function (html) {
 }
 ```
 
-### 事前定義リストについて
+### プリセットについて
 
-各ブロック要素について、CSSクラスやその他の属性をあらかじめ固定とした事前定義セットを定義可能です。  
+各ブロック要素について、CSSクラスやその他の属性をあらかじめ固定としたプリセットを定義可能です。  
 例えば、見出しにおいて、```<h3 class="title">``` というHTMLマークアップが必要であれば、Heading要素の設定は下記のようになります。
 
 ```
 Heading: {
-  preDefinedSets: [
+  presets: [
     {level: 'h3', className: 'title', dispName: '見出しタイトル'}
   ]
 }

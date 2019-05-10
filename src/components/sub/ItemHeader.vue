@@ -145,7 +145,7 @@ export default {
       // ラベルが直に指定されているか、
       // 定義セットが指定されてる場合
       if (this.label) return this.label
-      else if (this.item.preDefined && this.item.preDefined.dispName) return this.item.preDefined.dispName
+      else if (this.item.preset && this.item.preset.dispName) return this.item.preset.dispName
  
       const conf = this.getConfig(this.item.name)
       if (conf && conf.dispName) {

@@ -139,9 +139,9 @@ export class Item extends ItemBase {
       className: this.getConfig('allowCssClass') ? css_class : null,
       content: element.innerHTML,
     }
-    const def = this.getPreDefinedSets(item)
+    const def = this.getPreset(item)
     if (def) { // 定義セットに一致するものが見つかった
-      item.preDefined = def
+      item.preset = def
     }
     return item
   }

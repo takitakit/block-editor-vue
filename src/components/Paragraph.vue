@@ -296,9 +296,9 @@ export class Item extends ItemBase {
       imageAlign: img_align,
       content: content,
     }
-    const def = this.getPreDefinedSets(item)
+    const def = this.getPreset(item)
     if (def) { // 定義セットに一致するものが見つかった
-      item.preDefined = def
+      item.preset = def
     }
     return item
   }

@@ -102,7 +102,7 @@ export default {
     },
     // itemのclassName、type(Heading)などの項目を編集可能かどうか
     isItemAttrEditable () {
-      return !this.item.preDefined
+      return !this.item.preset
     }
   },
   watch: {

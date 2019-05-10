@@ -34,8 +34,8 @@ export default class ItemBase {
 
   // アイテムデータから、
   // 定義セット情報を取得する
-  getPreDefinedSets (item) {
-    const conf = this.getConfig('preDefinedSets')
+  getPreset (item) {
+    const conf = this.getConfig('presets')
     if (!conf) return null
 
     let matched_def = null

@@ -105,21 +105,21 @@ export class BlockEditor {
           tagName: 'div',                               // アイテムを識別するタグ名
           tagClassName: 'paragraph-wrap',               // アイテムを識別するクラス名
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
         Heading: {
           levels: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
           levelNames: null,
           defaultLevel: 'h3',
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
         List: {
           types: ['ordered', 'unordered'],              // サポートする種類(ordered | unordered)
           defaultType: 'unordered',                     // デフォルトの種類(ordered | unordered)
           maxRows: 50,                                  // 最大行数
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
         Table: {
           maxRow: 50,                                   // テーブルの最大行数
@@ -129,7 +129,7 @@ export class BlockEditor {
           minCol: 2,                                    // テーブルの最小列数
           defaultColNum: 2,                             // テーブルのデフォルト列数 
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
         // カラムの設定
         Column: {
@@ -142,13 +142,13 @@ export class BlockEditor {
           columnTagName: 'div',                         // カラムを識別するタグ名 
           columnTagClassName: 'column-item',            // カラムを識別するクラス名 
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
         Html: {
           tagName: 'div',                               // アイテムを識別するタグ名
           tagClassName: 'html-wrap',                    // アイテムを識別するクラス名
           dispName: null,                               // ラベル（指定がなければi18nで定義された表示名が使用される）
-          preDefinedSets: null,                         // 事前定義セットリスト
+          presets: null,                         // プリセットリスト
         },
       }
       // 設定値のコピー
@@ -254,6 +254,10 @@ export class BlockEditor {
         const ins = item_ins[item.name]
         if (ins) {
           ins.normalizeItem(item)
+          const def = ins.getPreset(item)
+          if (def) { // 定義セットに一致するものが見つかった
+            item.preset = def
+          }
         }
         _items.push(item)
       })
