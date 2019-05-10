@@ -1,7 +1,8 @@
 * 足らないアイコン
 * CKFinder、Froalaなどのアップローダとの連携
 * テーブル列の移動の際のボーダーがずれる
-* DEMOページの作成（Github Pages）
+* 幅の異なるテーブル列の位置を入れ替えたときに、幅が追従して入れ替わらない
+* predefined setをitemsで設定したときに、predefined setとして画面に表示されない
 * NPMの登録
 * CDNの登録
 * 非minifyファイルの生成

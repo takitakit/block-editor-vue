@@ -4,7 +4,12 @@
 コンテンツの編集を行う場合、CKEditorやTinyMCEなどのWSYIWIGエディタを使用すると自由度は高いですが、要素の移動などが直感的に出来なかったり、要素を削除したときにゴミのマークアップが残ったりするなど、操作に慣れが必要です。  
 また、CMSの管理画面などを第三者に開示する場合、ページ内で使用できるマークアップの種類を限りたいなどの制限が必要な場合があります（例えば、大見出し、小見出しと本文のみ許可したいが、テーブルは不許可にしたい、など）。  
 そこで、なるべく操作は簡単で、使用する要素の制限をプログラマブルに設定可能な、HTMLマークアップ編集のためのツールを制作しました。  
-![screen shot](https://github.com/takitakit/block-editor-vue/blob/master/screenshot.png)
+
+<p align="center">
+  <br>
+  <img width="400" src="./screenshot.png" alt="logo of vue-awesome repository">
+  <br>
+</p>
 
 ## ビルド
 
