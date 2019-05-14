@@ -7,7 +7,7 @@ I have created a tool for editing HTML markup that is as easy to use as possible
 
 <p align="center">
   <br>
-  <img width="400" src="./screenshot.png" alt="logo of vue-awesome repository">
+  <a href="https://codepen.io/takitakit/pen/VOabaN" target="_blank"><img width="400" src="./screenshot.png" alt="logo of vue-awesome repository"></a>
   <br>
 </p>
 
