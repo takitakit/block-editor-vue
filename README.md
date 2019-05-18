@@ -62,6 +62,25 @@ new BlockEditor('#editor', {rootClass: 've'});
 
 ## Options
 
+### Format
+```
+new BlockEditor(<element selector>, <options>);
+```
+For non-Common options, specify the object whose key is each section name.
+
+Example
+```
+new BlockEditor('#editor', {
+  // Common options
+  rootClass: 've',
+
+  // Paragraph options
+  Paragraph: {
+    defaultImageAlign: 'right'
+  }
+});
+```
+
 - [Common](#common)
   - [rootClass](#rootclass)
   - [baseFontSize](#basefontsize)

@@ -62,6 +62,25 @@ new BlockEditor('#editor', {rootClass: 've'});
 
 ## オプション
 
+### 書式
+```
+new BlockEditor(<element selector>, <options>);
+```
+Common以外のオプションは、各セクション名をキーに持つオブジェクトを指定して下さい。
+
+例
+```
+new BlockEditor('#editor', {
+  // Common options
+  rootClass: 've',
+
+  // Paragraph options
+  Paragraph: {
+    defaultImageAlign: 'right'
+  }
+});
+```
+
 - [Common](#common)
   - [rootClass](#rootclass)
   - [baseFontSize](#basefontsize)
