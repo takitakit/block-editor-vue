@@ -3,7 +3,7 @@
 </template>
 <script>
 import ComponentBase from '@/components/sub/ComponentBase.vue'
-import Quill from "quill/dist/quill.min.js"
+import Quill from "quill/dist/quill.core.js"
 import DOM from "@/scripts/DOM.js"
 import Util from "@/scripts/Util.js"
 
