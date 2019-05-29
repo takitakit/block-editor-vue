@@ -22,7 +22,7 @@ npm run build
 
 ## Demo
 
-[Codepen](https://codepen.io/takitakit/pen/VOabaN)
+[Codepen](https://codepen.io/takitakit/pen/RmpVKL)
 
 ## Usage
 
