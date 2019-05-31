@@ -117,6 +117,7 @@ class LinkBlot extends Inline {
     node.setAttribute("href", value)
     if (target_blank) {
       node.setAttribute("target", "_blank")
+      node.setAttribute("rel", "noopener")
     }
     return node
   }
@@ -133,8 +134,10 @@ class LinkBlot extends Inline {
       this.domNode.setAttribute("href", value)
       if (target_blank) {
         this.domNode.setAttribute("target", "_blank")
+        this.domNode.setAttribute("rel", "noopener")
       } else {
         this.domNode.removeAttribute("target")
+        this.domNode.removeAttribute("rel")
       }
     }
   }
