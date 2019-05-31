@@ -3,7 +3,7 @@
 [日本語はこちら](README.ja.md)
 
 "block-editor-vue" is a block editor that allows you to stack any combination of block elements, such as paragraphs, headings, lists, and so on.  
-Editing content is more flexible when using a WSYIG editor such as CKEditor or TinyMCE, but you need to get used to it because you can't move elements intuitively, and garbage markup remains when you delete elements.  
+Editing content is more flexible when using a WYSIWYG editor such as CKEditor or TinyMCE, but you need to get used to it because you can't move elements intuitively, and garbage markup remains when you delete elements.  
 Also, if you want to disclose the CMS management screen to a third party, you may need to limit the types of markup that can be used in the page. (For example, you want to allow only headlines, subheadings, and text, but not tables.)
 I have created a tool for editing HTML markup that is as easy to use as possible and that allows you to set programmable limits on the elements you use.  
 
