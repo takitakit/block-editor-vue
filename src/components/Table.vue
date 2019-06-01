@@ -784,7 +784,7 @@ export default {
       } else if (ev.which === 9) { // tab
         if (this.editingCell) {
           // 入力中のセルあり
-          // 確定して次のセルへ移動する
+
           let cell
           if (ev.shiftKey) {
               // Shift + Tab
@@ -793,7 +793,9 @@ export default {
               // Tab only
               cell = this.nextCell(this.editingCell, 'col', {changeRane: true, actualCell: true})
           }
-          this.onCellClick(cell)
+
+          this.endEditingCell(true) // セル入力を完了させて反映
+          this.onCellClick(cell)    // 前後のセルにフォーカスを移動
 
           ev.preventDefault()
           ev.stopPropagation()
