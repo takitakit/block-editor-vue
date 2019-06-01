@@ -148,17 +148,22 @@ export default {
     onDocumentDrop (ev) {
       ev.preventDefault()
 
+      let from_index = this.dragData.move.from
+      let to_index = this.dragData.move.to
+
       // 移動先＝移動元の場合は何もしない
-      if (this.dragData.move.from === this.dragData.move.to ||
-          (this.dragData.move.to-1 === this.dragData.move.from) ) return false
+      if (from_index === to_index ||
+          (to_index-1 === from_index) ) return false
 
       // console.log([this.draggingCol.from, this.draggingCol.to])
-      if (!this._canDrop(this.dragData.move.from, this.dragData.move.to, this.dragData.type)) {
+      if (!this._canDrop(from_index, to_index, this.dragData.type)) {
         alert(this.$t('Table.' + (this.dragData.type==='col' ? 'cannotMoveCol':'cannotMoveRow')))
         return false
       }
       // 移動処理
-      this.moveCells(this.dragData.move.from, this.dragData.move.to, this.dragData.type)
+      const colgroup = this.item.colgroup.splice(from_index, 1)
+      this.item.colgroup.splice(from_index < to_index ? to_index-1 : to_index, 0, colgroup[0])
+      this.moveCells(from_index, to_index, this.dragData.type)
       this.addTableHistory('rows') // Undo Historyに追加
     },
     // 指定の位置にドロップ可能かどうか
