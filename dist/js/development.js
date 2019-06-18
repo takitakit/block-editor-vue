@@ -241,7 +241,7 @@ options = {
         updatePreview(html);
     }
 };
-new BlockEditor('#app1', options);
+const instance = new BlockEditor('#app1', options);
 
 // Update preview
 var previewBody;

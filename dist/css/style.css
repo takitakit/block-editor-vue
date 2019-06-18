@@ -165,21 +165,27 @@ div[id^="jsFrame"] {
 }
 
 /* Visual Editor */
-.preview-body .ve-bold {
+.preview-body .ve-bold,
+.BEV-block-editor .ve-bold {
     font-weight: bold;
 }
-.preview-body .ve-highlight {
+.preview-body .ve-highlight,
+.BEV-block-editor .ve-highlight {
     background-color: yellow;
 }
-.preview-body .ve-underline {
+.preview-body .ve-underline,
+.BEV-block-editor .ve-underline {
     text-decoration: underline;
 }
-.preview-body .ve-red {
+.preview-body .ve-red,
+.BEV-block-editor .ve-red {
     color: red;
 }
-.preview-body .ve-blue {
+.preview-body .ve-blue,
+.BEV-block-editor .ve-blue {
     color: blue;
 }
-.preview-body .ve-green {
+.preview-body .ve-green,
+.BEV-block-editor .ve-green {
     color: green;
 }
