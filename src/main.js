@@ -422,6 +422,11 @@ export class BlockEditor {
         if (!this.vue.$refs || !this.vue.$refs.BlockEditor) return null
         return this.vue.$refs.BlockEditor.getHtml()
       }
+
+      // アイテムデータを取得する
+      this.getItems = () => {
+        return Util.deepCopy(_items)
+      }
     }
   }
 }
